@@ -36,7 +36,7 @@ As a **"Kuigang" (魁罡)**, I believe in precision, effective capacity, and rel
 ---
 
 ### 📫 Connect with me
-* **GitHub:** [https://github.com/your-username]
+* **GitHub:** [https://github.com/swliu920322]
 * **Current Location:** Malaysia (The "Refining Furnace")
 
 ---
