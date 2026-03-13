@@ -1,32 +1,45 @@
-# 🏗️ Shengwei Liu | Senior Full-Stack Architect & AI Researcher
+🏗️ Shengwei Liu | AI Architect & Cloud Strategist
+"Orchestrating Sovereign Enterprise Intelligence. Not just integrating AI, but building the engine."
 
-**"Building Digital Dams with Zero-Trust Integrity."**
-
-I am a veteran software engineer with **10 years of experience** in enterprise-grade development. Currently, I am bridging the gap between high-level cloud architecture and cutting-edge AI research.
-
----
-
-### 🚀 Strategic Focus: Project InsightFlow
-My current mission is the development of **InsightFlow**, a verifiable RAG architecture designed for the FinTech and GovTech sectors.
-
-* **Core Goal:** Eliminating AI hallucinations through strict citation mapping.
-* **Infrastructure:** Native Azure VNet integration and Multi-tenant security.
-* **Next Milestone:** Bridging the gap from prototype to enterprise-grade production by Q2 2026.
+10 years of frontend engineering power combined with an M.Sc. in AI. I focus on the "AI+" paradigm shift: building cloud-native systems where AI is the core kernel of business logic, not just an auxiliary patch.
 
 ---
 
-### 🛠️ Tech Stack & Pillars
-* **Languages:** Python (AI/Backend), TypeScript/Dart (Frontend), SQL.
-* **Cloud Architecture:** Microsoft Azure (Preparing for **AZ-305** & **AI-102**).
-* **AI Frameworks:** LangChain, RAGAS, OpenAI API, Azure AI Search.
-* **Frontend Mastery:** 10 years of experience in building complex, high-performance UIs.
+🛡️ Core Asset: InsightFlow 2.0
+A multi-tenant RAG & Agentic Orchestrator designed for high-stakes environments (FinTech/GovTech).
+
+Multi-Agent Orchestration: Implementing DAG-based workflows to decouple cognitive reasoning from REST API execution.
+
+Physical Data Silos: Utilizing Azure AI Search for index-level multi-tenancy, ensuring zero cross-domain hallucination.
+
+High-Concurrency Engine: Built on FastAPI to resolve transaction conflicts and state-machine bottlenecks under extreme load.
 
 ---
 
-### 📈 2026 Roadmap: The "Big Dam" Construction
-* **[Q1] Architectural Validation:** Finalizing InsightFlow Phase 1 (Headless API & Citation Engine).
-* **[Q2] Cloud Sovereignty:** Securing Azure Certifications and migrating to private VNet infrastructure.
-* **[Q3] Academic Integration:** Commencing MSc research at NTU to refine AI verifiability.
+📈 Proven Impact (The Hard Metrics)
+155x Throughput Increase: Re-engineered AML (Anti-Money Laundering) compliance workflows by decoupling decision layers from physical I/O.
+
+Latency Optimization: Targeted 40% reduction in retrieval-augmented workflows via asymmetric filtering and Isolation Forest deployment.
+
+State Machine Reliability: Architected questValut, a gamified marketplace resolving complex transaction conflicts with zero-latency integrity.
+
+---
+
+🎯 2026 Strategic Mission: Singapore Battle
+Currently mapping enterprise-scale business logic to Azure/GCP infrastructure.
+
+Certifications: Hard-locking AZ-305 (Solutions Architect) & AI-102 (AI Engineer) by Q2 2026.
+
+Vision: Scaling AI-Native Enterprise Engines that replace "code coincidences" with "architectural rules."
+
+---
+
+🛠️ The Sovereignty Stack
+Core: Python (Agentic Logic), TypeScript (UI Power), SQL (Persistence).
+
+Cloud: Microsoft Azure (Enterprise Specialist), GCP (MLOps Integration).
+
+Orchestration: Azure AI Studio, Prompt Flow, LangChain, FastAPI.
 
 ---
 
