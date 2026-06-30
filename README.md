@@ -1,13 +1,7 @@
 # 🏗️ Shengwei Liu | Cloud & AI Engineer | AZ-305 Solutions Architect Expert
 *"The Cloud is just a landing zone. Engineering logic always comes first."*
 
-With 8 years of production software engineering experience and an M.Sc. in AI, I bridge robust frontend state management with highly governed Azure cloud architectures. My focus is on **Enterprise AI Orchestration**—enforcing zero-trust compliance, strict physical network isolation, and deterministic deployment pipelines for LLM workloads.
-
----
-
-## 👤 Executive Profile
-
-A veteran Software Engineer and Cloud Architect with **10+ years of production experience** and an **M.Sc. in AI** (specializing in Enterprise RAG & Multi-Agent Orchestration). I possess a rare blend of deep frontend state-machine mastery and rigorous cloud platform engineering expertise. I specialize in designing and deploying secure, high-performance, and compliant hosting perimeters for AI workloads on Microsoft Azure.
+A veteran Software Engineer and Cloud Architect with **8 years of production experience** and an **M.Sc. in AI** (specializing in Enterprise RAG & Multi-Agent Orchestration). I possess a rare blend of deep frontend state-machine mastery and rigorous cloud platform engineering expertise. I specialize in designing and deploying secure, high-performance, and compliant hosting perimeters for AI workloads on Microsoft Azure.
 
 <p align="left">
   <img src="https://img.shields.io/badge/Cert-AZ--104%20Azure%20Administrator-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
