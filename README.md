@@ -1,56 +1,49 @@
-# 🏗️ Shengwei Liu | Cloud & AI Solutions Architect
-*"Orchestrating Sovereign Enterprise Intelligence. Not just integrating AI, but building the secure cloud engine that scales it."*
+# 🏗️ Shengwei Liu | Cloud & AI Engineer | AZ-305 Solutions Architect Expert
+*"The Cloud is just a landing zone. Engineering logic always comes first."*
 
-10 years of complex engineering power combined with an M.Sc. in AI and a **triple-crown Microsoft Azure certification**. I focus on the "AI+" paradigm shift: designing secure, compliant, and highly available cloud-native systems where AI is the core kernel of business logic, governed by strict enterprise standards.
+With 8 years of production software engineering experience and an M.Sc. in AI, I bridge robust frontend state management with highly governed Azure cloud infrastructures. My focus is on **Enterprise AI Orchestration**—enforcing zero-trust compliance, strict physical network isolation, and deterministic deployment pipelines for LLM workloads.
 
----
-
-### 🏆 Enterprise Cloud Credentials
-I design solutions that bridge cutting-edge AI with uncompromising corporate governance.
-* **Microsoft Certified: Azure Solutions Architect Expert** (AZ-305 & AZ-104) 
-* **Microsoft Certified: Azure AI Engineer Associate** (AI-102)
-
----
-
-### 🛡️ Core Asset: InsightFlow 2.0
-A multi-tenant RAG & Agentic Orchestrator designed for high-stakes, highly regulated environments (FinTech/GovTech).
-
-* **Cloud-Native Governance & Security:** Architected with Azure Hub-Spoke topology, utilizing **Private Links** and **VNet isolation** to ensure zero public internet exposure for sensitive corporate data.
-* **Physical Data Silos & Multi-Tenancy:** Utilizing **Azure AI Search** for index-level multi-tenancy, ensuring strict RBAC and zero cross-domain hallucination.
-* **Multi-Agent Orchestration:** Implementing DAG-based workflows to decouple cognitive reasoning from REST API execution.
-* **High-Concurrency Engine:** Built on FastAPI/AKS to resolve transaction conflicts and state-machine bottlenecks under extreme load.
+<p align="left">
+  <img src="https://img.shields.io/badge/Cert-AZ--305%20Solutions%20Architect%20Expert-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cert-SC--100%20Cybersecurity%20Architect-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cert-AZ--104%20Azure%20Administrator-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+</p>
 
 ---
 
-### 📈 Proven Impact & Architectural Philosophy
-* **High-Leverage Engineering:** Re-engineered AML (Anti-Money Laundering) compliance workflows by decoupling decision layers from physical I/O, yielding a **155x Throughput Increase**.
-* **Zero-Downtime Reliability:** Transitioned from tactical frontend patching to strategic system integration—focusing on Disaster Recovery, Business Continuity, and FinOps optimization.
-* **Isomorphic AI & Edge Evolution:** Exploring the delegation of inference workloads to local AIPC silicon via WebGPU to secure data privacy and cut cloud costs.
+### 🛡️ Signature Asset: Project-OmniGuard (Master's Capstone)
+A serverless agentic workflow built to replace rigid legacy business logic, optimized for highly regulated enterprise environments.
 
----
-
-### 🎯 2026 Strategic Mission: Singapore Battle
-* **Target:** Architecting scalable, resilient, and MAS TRM-compliant AI ecosystems for enterprise clients in the APAC hub.
-* **Vision:** Scaling AI-Native Enterprise Engines that replace "code coincidences" with robust "architectural rules." Moving beyond just *building* apps to *governing* fleets of intelligent systems.
+* **100% Credential-less Architecture:** Compute nodes rely exclusively on **System-assigned Managed Identities** and fine-grained RBAC roles. Zero hardcoded connection strings.
+* **Physical Network Perimeter:** Deployed via Bicep/Terraform using a Hub-Spoke topology. Disabled all public internet access to Azure AI Search and OpenAI via **Private Endpoints**.
+* **Enterprise-Grade Stability:** Orchestrated LLM plugins natively using **Semantic Kernel** (C#/Python) rather than LangChain to eliminate rapid API drift and ensure engineering certainty.
 
 ---
 
 ### 🛠️ The Sovereignty Stack
-* **Cloud & Infrastructure:** Microsoft Azure (VNet, Private Endpoint, AKS, APIM), Terraform (IaC).
-* **AI & Data Ops:** Azure OpenAI, Azure Machine Learning (MLOps), Azure AI Search.
-* **Core Logic & Orchestration:** Python (Agentic Logic), FastAPI, LangChain/Prompt Flow.
-* **UI/UX Power:** TypeScript, Next.js / React (for delivering the ultimate executive dashboard experience).
+<p align="left">
+  <!-- Cloud & Infra -->
+  <img src="https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoft-azure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <!-- Logic & AI -->
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Semantic_Kernel-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
+  <!-- UI / State -->
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+</p>
 
 ---
 
-### 🧘 Philosophy: Protocol Zero
-As a **"Kuigang" (魁罡)**, I believe in precision, effective capacity, and relentless discipline. Whether it's perfecting a Russian Planche or architecting a highly available multi-tenant SaaS, the principle remains the same: **Solid Foundation, No Compromise.**
+### 📈 Architectural Philosophy
+* **Single Foundation:** Code duplication kills agility. I enforce directory-level physical isolation to govern cross-team boundaries and eliminate code drift.
+* **Modular Progression:** As a practitioner of progressive calisthenics, I approach distributed systems with the exact same mechanics: refine foundational alignment (network isolation & secure identity) before scaling complex movements (AI applications).
 
 ---
 
-### 📫 Connect with me
+### 📫 Target: Singapore 2026
+Currently based in Malaysia completing my M.Sc. in AI. Actively seeking **Senior Cloud / AI Architect** roles in Singapore for July/August 2026.
+
 * **LinkedIn:** [Shengwei Liu](https://www.linkedin.com/in/shengwei-liu/)
-* **Current Location:** Malaysia (The "Refining Furnace") -> Preparing for Singapore
-
----
-*© 2026 Shengwei Liu. Architected for Trust. Engineered for Compliance.*
