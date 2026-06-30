@@ -3,6 +3,12 @@
 
 With 8 years of production software engineering experience and an M.Sc. in AI, I bridge robust frontend state management with highly governed Azure cloud architectures. My focus is on **Enterprise AI Orchestration**—enforcing zero-trust compliance, strict physical network isolation, and deterministic deployment pipelines for LLM workloads.
 
+---
+
+## 👤 Executive Profile
+
+A veteran Software Engineer and Cloud Architect with **10+ years of production experience** and an **M.Sc. in AI** (specializing in Enterprise RAG & Multi-Agent Orchestration). I possess a rare blend of deep frontend state-machine mastery and rigorous cloud platform engineering expertise. I specialize in designing and deploying secure, high-performance, and compliant hosting perimeters for AI workloads on Microsoft Azure.
+
 <p align="left">
   <img src="https://img.shields.io/badge/Cert-AZ--104%20Azure%20Administrator-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
   <img src="https://img.shields.io/badge/Cert-AZ--305%20Solutions%20Architect%20Expert-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
@@ -13,19 +19,20 @@ With 8 years of production software engineering experience and an M.Sc. in AI, I
 
 ---
 
-### 🛡️ Signature Asset: Project-OmniGuard (Master's Capstone)
-A modern, zero-trust cloud-edge collaborative security orchestrator sandbox. Tailored for highly regulated enterprise environments to manage edge-device fleet telemetry and AI reasoning workloads.
+## 🛡️ Featured Work: Project-OmniGuard (Master's Capstone)
+*An enterprise-grade cloud-edge collaborative sandbox demonstrating secure state-machine execution and telemetry routing for embodied fleet assets.*
 
-* **Zero-Trust Private VNet Architecture (ACA & Private Link):** 
-  Orchestrated a secure dual-container topology on **Azure Container Apps (ACA)**. The public-facing Next.js frontend acts as an **API Gateway**, proxying requests to the private backend FastAPI container (`external: false`) via private DNS. Completely eliminated public internet access to Cosmos DB, Storage Account, and Azure OpenAI using **Private Endpoints (Private Link)**.
-* **Hybrid Edge-Cloud AI Pipeline (WebGPU & Azure OpenAI):** 
-  Engineered an in-browser local RAG pipeline using **WebGPU** (running Xenova/all-MiniLM-L6-v2 and Qwen2.5 local inference) to handle high-frequency interactions on the client side at **$0.00 server cost**. Seamlessly falls back to private Azure OpenAI streaming (SSE) via the Next.js App Router dynamic proxy when local knowledge bounds are exceeded.
-* **Real-time Embodied Telemetry Dashboard:** 
-  Built a Next.js/React console demonstrating edge fleet metrics (HP, Battery, Velocity, Temp) with network jitter/latency simulators. Integrates live IoT/Event Hub data paths with an visual flowchart of the cloud topology and agent orchestration.
-* **Deterministic DevOps & Cache-Busting Pipelines:** 
-  Developed a Bicep IaC setup for rapid, idempotent environment recreation. Integrated a custom Docker build-and-deploy pipeline using `--no-cache` builds and automated environment variable pollution (`TRIGGER_VERSION`) to force revision updates and resolve registry cache invalidation bugs.
+* **Zero-Trust Network Perimeter (ACA + Private Link):**  
+  Architected a VNet-isolated dual-container deployment on **Azure Container Apps (ACA)**. The public Next.js container acts as an **API Gateway**, proxying traffic to a private backend FastAPI replica (`external: false`) over internal DNS (`.internal`). Decapitated all public access to Cosmos DB, Storage Account, and Azure OpenAI using **Private Endpoints (Private Link)**.
+* **Hybrid Edge-Cloud AI Pipeline (WebGPU + Cloud LLM):**  
+  Engineered client-side WebGPU feature extraction and semantic routing (Xenova MiniLM + Qwen2.5) to run local RAG queries inside the browser at **$0.00 server cost**, fallback-streaming (SSE) to private Azure OpenAI when local knowledge bounds are exceeded.
+* **Telemetry & Fleet Governance Dashboard:**  
+  Built a Next.js console that visualizes edge device telemetry (HP, Battery, Temp, Velocity) with network jitter/latency simulators. Renders cloud infrastructure topology and agent decision flows dynamically.
+* **Robust DevOps & Cache-Busting CI/CD:**  
+  Created declarative **Bicep** IaC templates for idempotent environment replication. Designed a custom Docker deployment pipeline utilizing `--no-cache` builds and dynamic environment variable pollution (`TRIGGER_VERSION`) to bypass registry cache invalidation bugs and guarantee immediate rolling updates.
 
 ---
+
 
 ### 🛠️ The Sovereignty Stack
 <p align="left">
@@ -45,13 +52,25 @@ A modern, zero-trust cloud-edge collaborative security orchestrator sandbox. Tai
 
 ---
 
-### 📈 Architectural Philosophy
-* **Single Foundation:** Code duplication kills agility. I enforce directory-level physical isolation to govern cross-team boundaries and eliminate code drift.
-* **Modular Progression:** As a practitioner of progressive calisthenics, I approach distributed systems with the exact same mechanics: refine foundational alignment (network isolation & secure identity) before scaling complex movements (AI applications).
+## 🛠️ Technology Stack
+* **Cloud & Platform:** Microsoft Azure, Azure Container Apps (ACA), Private Link, VNet Isolation, ACR, Bicep IaC, Docker
+* **Artificial Intelligence:** Azure OpenAI Service, WebGPU In-Browser Inference, Embeddings, RAG, Semantic Routing
+* **Backend & API:** Python, FastAPI, Azure Functions ASGI Host, Uvicorn, RESTful API
+* **Frontend & State:** Next.js (App Router), TypeScript, React, Tailwind CSS, WebSockets, Server-Sent Events (SSE)
 
 ---
 
-### 📫 Target: Singapore 2026
-Currently based in Malaysia completing my M.Sc. in AI. Actively seeking **Senior Cloud / AI Architect** roles in Singapore for July/August 2026.
+## 📈 Architectural Philosophy
+1. **Zero Duplication & Clear Boundaries:** Directory-level separation and component isolation are critical to governing cross-team boundaries and avoiding code drift.
+2. **Infrastructure as Code (IaC):** Every piece of network infrastructure, access control, and computing resource must be declarative, versioned, and audit-ready.
+3. **FinOps-Driven AI:** Leverage edge capabilities (like WebGPU) to reduce cloud inferencing costs, maximizing resource utilization while maintaining extreme data privacy.
+
+---
+
+## 📫 Career Target: Singapore 2026
+I am looking for **Senior Cloud Architect, AI Platform Engineer, or Lead Full-Stack Architect** roles in Singapore starting July/August 2026. 
 
 * **LinkedIn:** [Shengwei Liu](https://www.linkedin.com/in/shengwei-liu/)
+* **Email:** [Contact via LinkedIn]
+* **Resume Document:** Available upon request
+
