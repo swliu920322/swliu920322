@@ -4,9 +4,11 @@
 With 8 years of production software engineering experience and an M.Sc. in AI, I bridge robust frontend state management with highly governed Azure cloud infrastructures. My focus is on **Enterprise AI Orchestration**—enforcing zero-trust compliance, strict physical network isolation, and deterministic deployment pipelines for LLM workloads.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Cert-AZ--305%20Solutions%20Architect%20Expert-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cert-SC--100%20Cybersecurity%20Architect-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
   <img src="https://img.shields.io/badge/Cert-AZ--104%20Azure%20Administrator-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cert-AZ--305%20Solutions%20Architect%20Expert-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cert-SC--300%20Azure%20Identity%20and%20Access%20Administrator%20Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cert-AI--102%20Azure%20AI%20Engineer%20Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cert-AB--100%20Agentic%20AI%20Business%20Solutions%20Architect-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
 </p>
 
 ---
