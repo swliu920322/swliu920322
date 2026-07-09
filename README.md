@@ -1,12 +1,14 @@
 <div align="center">
 
-# 刘胜伟 | Shengwei Liu
+# Shengwei Liu
 
-**Cloud Security Architect · AI Safety Researcher · Zero-Trust Practitioner**
+**Cloud Security Architect · Zero-Trust Builder · AI + IoT Full-Stack Engineer**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shengwei--liu-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/shengwei-liu)
 [![Location](https://img.shields.io/badge/📍-Singapore-blue?style=flat-square)]()
 [![Email](https://img.shields.io/badge/📧-lsw19920322@gmail.com-red?style=flat-square)](mailto:lsw19920322@gmail.com)
+
+**[🇨🇳 中文版](./PROFILE_README_zh.md)**
 
 </div>
 
@@ -14,26 +16,9 @@
 
 ### 👤 About Me
 
-I am a **Solutions Architect** with 10+ years of engineering experience, currently pursuing research at the intersection of **cloud-edge security**, **AI safety for embodied systems**, and **zero-trust infrastructure hardening**. I hold a Master's degree in Applied Computing (AI Specialization) from Taylor's University and am seeking a **PhD opportunity in Cybersecurity** in Singapore to advance my research on securing autonomous AI decision-making pipelines.
+A **Cloud Security Architect** with 10+ years of full-stack engineering experience. From Fortune 500 delivery leadership at Accenture to industrial MES systems at Scania, my core strength is **turning security architectures from slides into working systems** — not just drawing Hub-Spoke topology diagrams, but writing the Bicep templates, configuring Private Endpoints, and running Shadow E2E tests to prove the network is actually isolated.
 
-My core thesis — the **Kinematic-Token Theorem** — formally proves that cloud-only LLM inference latency creates a physical safety deadlock for real-time autonomous vehicle control, and proposes a multi-layered defense architecture combining network isolation, AI safety firewalls, and edge computing to resolve it.
-
-> *"My moat is not the technologies I use, but the security judgments I make — where to short-circuit, where to isolate, where to degrade."*
-
----
-
-### 🔬 Research Interest
-
-**Securing AI-Driven Cyber-Physical Systems: Zero-Trust Architecture, Multi-Agent Safety Orchestration, and Edge-Cloud Hybrid Defense**
-
-| Research Dimension | My Contribution |
-|:-------------------|:----------------|
-| **Zero-Trust Network Security** | Hub-Spoke VNet + 4 Private Endpoints + bidirectional NSG + Managed Identity. Backend invisible from public internet. Validated by automated Shadow E2E test verifying Private DNS A records |
-| **AI Safety & Alignment** | 3-Agent pipeline (Router → Safety Firewall → Action Compiler) with cascading early circuit-breaking. Safety agent can **BLOCK** unsafe physical actions before they reach actuators |
-| **Edge Computing Security** | WebGPU in-browser inference ($0.00 server cost) protects user privacy — sensitive data never leaves the client device, reducing the cloud attack surface to zero for high-frequency queries |
-| **Formal Verification of AI Control Deadlocks** | Kinematic-Token Theorem: mathematical proof that $v \times T_{cloud} > d_{obstacle} - d_{brake}$ at operational speeds, necessitating hybrid edge-cloud cognitive pipelines |
-| **IoT Protocol Security** | Hand-crafted HMAC-SHA256 SAS Token signing (not SDK wrapper) for IoT Hub C2D messaging, demonstrating deep understanding of authentication protocols |
-| **Infrastructure Security Testing** | Self-healing Shadow E2E test suite: deploys full infrastructure replica → audits Private DNS resolution → auto-destroys with Ctrl+C signal safety |
+Currently holding 5 Microsoft Certifications (including **AZ-305 Solutions Architect Expert** and **SC-300 Identity & Access Security**), building **Project-OmniGuard** — an enterprise-grade cloud-edge security platform deployed on Azure Singapore.
 
 ---
 
@@ -41,7 +26,7 @@ My core thesis — the **Kinematic-Token Theorem** — formally proves that clou
 
 <div align="center">
 
-| Certification | Title | Domain |
+| Cert | Title | Domain |
 |:---:|:---|:---|
 | **AZ-305** | Azure Solutions Architect Expert | ☁️ Cloud Architecture |
 | **AZ-104** | Azure Administrator Associate | ☁️ Cloud Operations |
@@ -53,7 +38,7 @@ My core thesis — the **Kinematic-Token Theorem** — formally proves that clou
 
 ---
 
-### 🛡️ Flagship Project
+### 🛡️ Flagship Project: OmniGuard
 
 <table>
 <tr>
@@ -62,109 +47,86 @@ My core thesis — the **Kinematic-Token Theorem** — formally proves that clou
 </td>
 <td>
 
-**[Project-OmniGuard](https://github.com/swliu920322/Project-OmniGuard)** — Cloud-Edge Collaborative Security Orchestrator & Zero-Trust Sandbox
+**[Project-OmniGuard](https://github.com/swliu920322/Project-OmniGuard)** — Cloud-Edge Collaborative Security Orchestrator · Zero-Trust Sandbox · 6,300+ Lines of Production Code
 
-An enterprise-grade security platform proving that cloud-only AI inference creates physical safety deadlocks for autonomous fleets, with a full Zero-Trust defense architecture deployed on Azure Singapore.
+An enterprise-grade security platform I designed and built from scratch, deployed on Azure Singapore. Not a demo — a fully functional end-to-end system.
 
 </td>
 </tr>
 </table>
 
-**Security Architecture Highlights:**
+#### What I Actually Built:
 
-```
-Public Internet
-    │
-    ▼
-┌────────────────────────────────┐
-│ Next.js API Gateway (BFF)      │  ← Only public-facing surface
-│ Catch-all route proxy          │     Hides all internal paths
-└───────────┬────────────────────┘
-            │ .internal DNS (private)
-            ▼
-┌────────────────────────────────┐
-│ FastAPI Backend                │  ← external: false
-│ (VNet-internal ONLY)           │     Invisible from internet
-└───────────┬────────────────────┘
-            │ Private Endpoints (zero public access)
-            ▼
-┌──────┬──────────┬──────────┬──────────────┐
-│Cosmos│ Key Vault│   Blob   │ Azure OpenAI │
-│  DB  │  (RBAC)  │  Store   │  (Private)   │
-└──────┴──────────┴──────────┴──────────────┘
-```
+**🔐 Security Layer — Not Diagrams, Verified Zero-Trust**
 
-**Key Metrics:**
+- Hand-built **Hub-Spoke VNet topology** with 4 Private Endpoints (Cosmos DB / Key Vault / Storage / OpenAI). Backend completely invisible from public internet (`external: false`)
+- Hand-crafted **HMAC-SHA256 SAS Token signing** (not a one-line SDK call — built with `hmac` + `hashlib` from protocol level) for IoT Hub C2D message authentication
+- Wrote a **287-line self-healing Shadow E2E test**: provisions a shadow resource group → verifies Private DNS A records point to `10.1.2.x` subnet → auto-destroys. Even Ctrl+C won't leak resources
+- **Bidirectional NSG micro-segmentation**: Deny Internet Inbound + Allow Backend Only to Storage Subnet
+
+**🤖 AI Safety Layer — Multi-Agent Orchestration with Physical Circuit-Breaking**
+
+- 3-Agent pipeline (Router → Safety Firewall → Action Compiler) with **2 early short-circuit points**:
+  - `SENSOR_ERROR` → immediate STOP, no downstream Agent token waste
+  - Safety Agent returns `BLOCK` → override, action never reaches physical actuators
+- Engineering validation of the Kinematic-Token Theorem: frontend physics simulation proves AGVs cannot brake before collision at 2600ms cloud latency — 15ms edge braking is required
+
+**⚡ Edge Computing Layer — LLMs Running Inside the Browser**
+
+- **WebGPU** boots Qwen2.5-0.5B + MiniLM-L6-v2 directly in the browser at $0.00 server compute cost
+- Cosine similarity semantic router (threshold ≥ 0.72) — if it can be answered locally, it never hits the cloud
+
+**🏗️ Infrastructure Layer — Full IaC + Automation Pipeline**
+
+- 3-layer modular Bicep (main → nested-infra → compute-module), supporting `sandbox` / `secure-iot` scenario switching
+- Visual IaC Configurator: configure VNet CIDR, SKUs, Managed Identity in the browser, export deployable `.zip` packages
+- Bicep preflight compilation + Azure `az deployment sub validate` pre-flight validation
+- **33 Architecture Decision Records** — documenting not just what was built, but why
+
+**📊 Project Metrics**
 
 | Metric | Value |
-|:-------|:------|
-| Total Codebase | **6,300+ lines** across frontend, backend, IaC, and automation |
-| Architecture Decision Records | **33 ADRs** (documented engineering reasoning) |
-| IaC Templates | 3-layer modular Bicep (main → infra → compute) |
-| E2E Security Test | 287-line self-healing Shadow test with Private DNS validation |
-| Multi-Agent Pipeline | 3 agents with 2 circuit-breaker short-circuits |
-| Edge AI Inference | WebGPU Qwen2.5 + MiniLM-L6-v2 at $0.00 server cost |
+|:-----|:-----|
+| Total Codebase | **6,300+ lines** (Frontend 3,500 + Backend 800 + IaC 560 + Automation 1,200) |
+| ADR Documents | **33** (Infra 8 / Backend 6 / Frontend 13 / Architecture 10) |
+| E2E Test Suite | 287 lines (self-healing, validates Private DNS + ACA health) |
+| IoT Full-Duplex | Event Hub Trigger ↔ C2D Messages (HMAC-SHA256 SAS hand-signed) |
 
 ---
 
-### 💼 Professional Experience
+### 💼 Engineering Track Record
 
-| Period | Company | Role | Security-Relevant Work |
-|:-------|:--------|:-----|:-----------------------|
-| 2025–Present | Independent | **Lead Architect** | Project-OmniGuard: Zero-Trust infra, Multi-Agent AI safety, IoT security |
-| 2023–2024 | **Scania Group** | Software Engineer | Industrial MES/MOM systems under strict **compliance and security audit** standards |
-| 2021–2023 | **Accenture** | Associate Manager / Tech Lead | FinTech platform architecture with **audit token life-cycle management** and modular isolation |
-| 2020–2021 | Aosheng Info Tech | Lead Systems Architect | Corporate banking migration with **static code review and dry-run preflight checks** |
+| Period | Company | Role | What I Did |
+|:-------|:--------|:-----|:-----------|
+| 2025–Present | Independent | **Lead Architect** | OmniGuard: Zero-Trust infra + Multi-Agent AI safety + IoT device security |
+| 2023–2024 | **Scania Group** | Software Engineer | Cross-regional EU/Asia MES/MOM systems under strict industrial compliance & security audits |
+| 2021–2023 | **Accenture** | Associate Manager / Tech Lead | FinTech platform 0→1 architecture, micro-frontend isolation, audit token lifecycle state machine |
+| 2020–2021 | Aosheng Info Tech | Lead Systems Architect | Corporate banking core system migration, static code review + dry-run preflight security gates |
 
 ---
 
 ### 🎓 Education
 
-| Degree | Institution | Period | Focus |
-|:-------|:------------|:-------|:------|
-| **MSc Applied Computing** (AI Specialization) | Taylor's University, Malaysia | 2025.9–2026.8 | Enterprise RAG, Multi-Agent Orchestration |
-| B.Eng Mechanical Engineering | Taiyuan University of Technology | 2010.9–2014.9 | — |
+| Degree | Institution | Period |
+|:-------|:------------|:-------|
+| **MSc Applied Computing** (AI Specialization) | Taylor's University, Malaysia | 2025.9–2026.8 |
+| B.Eng Mechanical Engineering | Taiyuan University of Technology | 2010.9–2014.9 |
 
 ---
 
-### 🧰 Technical Stack
+### 🧰 Tech Stack
 
 **Security & Infrastructure**
-`Zero-Trust` `VNet/NSG` `Private Link` `Managed Identity` `Key Vault RBAC` `HMAC-SHA256 SAS` `Entra ID (SC-300)` `Shadow E2E Testing`
+`Zero-Trust` `VNet/NSG` `Private Link` `Managed Identity` `Key Vault RBAC` `HMAC-SHA256` `Entra ID` `Shadow E2E`
 
-**Cloud & DevOps**
+**Cloud Platform**
 `Azure Container Apps` `Azure Functions` `Cosmos DB` `IoT Hub` `Bicep IaC` `Docker` `ACR` `Log Analytics`
 
-**AI & Machine Learning**
-`Azure OpenAI` `Multi-Agent Orchestration` `WebGPU Inference` `RAG` `Transformers` `Semantic Routing` `SSE Streaming`
+**AI Engineering**
+`Azure OpenAI` `Multi-Agent Pipeline` `WebGPU` `RAG` `Transformers` `Semantic Routing` `SSE Streaming`
 
 **Application Development**
-`Next.js 14` `FastAPI` `TypeScript` `Python` `React` `Canvas/Physics Simulation`
-
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=swliu920322&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=swliu920322&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
-
----
-
-### 🎯 What I'm Looking For
-
-I am actively seeking a **PhD position in Cybersecurity / AI Safety** in Singapore. My research aims to extend the Kinematic-Token Theorem into a formal framework for securing AI-driven cyber-physical systems, with focus on:
-
-- 🔐 **Zero-Trust architectures** for autonomous IoT fleets in adversarial network environments
-- 🤖 **AI safety guarantees** through multi-agent compliance firewalls with formal verification
-- ⚡ **Edge-cloud hybrid security** — proving that local compute reduces both latency and attack surface
-- 🏗️ **Infrastructure security testing** — automated shadow environment validation of network isolation
-
-> If your lab works on securing AI systems, cloud-edge security, or IoT/CPS safety, I would love to connect.
+`Next.js 14` `FastAPI` `TypeScript` `Python` `React` `Canvas Physics Simulation`
 
 ---
 
@@ -173,3 +135,4 @@ I am actively seeking a **PhD position in Cybersecurity / AI Safety** in Singapo
 📧 **lsw19920322@gmail.com** · 🔗 **[linkedin.com/in/shengwei-liu](https://linkedin.com/in/shengwei-liu)** · 📍 **Singapore**
 
 </div>
+
