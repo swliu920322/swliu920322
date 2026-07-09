@@ -1,70 +1,175 @@
-# 🏗️ Shengwei Liu | Cloud & AI Engineer | AZ-305 Solutions Architect Expert
-*"The Cloud is just a landing zone. Engineering logic always comes first."*
+<div align="center">
 
-A veteran Software Engineer and Cloud Architect with **8 years of production experience** and an **M.Sc. in AI** (specializing in Enterprise RAG & Multi-Agent Orchestration). I possess a rare blend of deep frontend state-machine mastery and rigorous cloud platform engineering expertise. I specialize in designing and deploying secure, high-performance, and compliant hosting perimeters for AI workloads on Microsoft Azure.
+# 刘胜伟 | Shengwei Liu
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Cert-AZ--104%20Azure%20Administrator-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cert-AZ--305%20Solutions%20Architect%20Expert-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cert-SC--300%20Azure%20Identity%20and%20Access%20Administrator%20Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cert-AI--102%20Azure%20AI%20Engineer%20Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cert-AB--100%20Agentic%20AI%20Business%20Solutions%20Architect-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-</p>
+**Cloud Security Architect · AI Safety Researcher · Zero-Trust Practitioner**
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-shengwei--liu-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/shengwei-liu)
+[![Location](https://img.shields.io/badge/📍-Singapore-blue?style=flat-square)]()
+[![Email](https://img.shields.io/badge/📧-lsw19920322@gmail.com-red?style=flat-square)](mailto:lsw19920322@gmail.com)
 
-## 🛡️ Featured Work: Project-OmniGuard (Master's Capstone)
-*An enterprise-grade cloud-edge collaborative sandbox demonstrating secure state-machine execution and telemetry routing for embodied fleet assets.*
-
-* **Zero-Trust Network Perimeter (ACA + Private Link):**  
-  Architected a VNet-isolated dual-container deployment on **Azure Container Apps (ACA)**. The public Next.js container acts as an **API Gateway**, proxying traffic to a private backend FastAPI replica (`external: false`) over internal DNS (`.internal`). Decapitated all public access to Cosmos DB, Storage Account, and Azure OpenAI using **Private Endpoints (Private Link)**.
-* **Hybrid Edge-Cloud AI Pipeline (WebGPU + Cloud LLM):**  
-  Engineered client-side WebGPU feature extraction and semantic routing (Xenova MiniLM + Qwen2.5) to run local RAG queries inside the browser at **$0.00 server cost**, fallback-streaming (SSE) to private Azure OpenAI when local knowledge bounds are exceeded.
-* **Telemetry & Fleet Governance Dashboard:**  
-  Built a Next.js console that visualizes edge device telemetry (HP, Battery, Temp, Velocity) with network jitter/latency simulators. Renders cloud infrastructure topology and agent decision flows dynamically.
-* **Robust DevOps & Cache-Busting CI/CD:**  
-  Created declarative **Bicep** IaC templates for idempotent environment replication. Designed a custom Docker deployment pipeline utilizing `--no-cache` builds and dynamic environment variable pollution (`TRIGGER_VERSION`) to bypass registry cache invalidation bugs and guarantee immediate rolling updates.
+</div>
 
 ---
 
+### 👤 About Me
 
-### 🛠️ The Sovereignty Stack
-<p align="left">
-  <!-- Cloud & Infra -->
-  <img src="https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoft-azure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bicep-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-  <!-- Logic & AI -->
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/WebGPU-black?style=flat-square&logo=webgpu&logoColor=white" />
-  <!-- UI / State -->
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-</p>
+I am a **Solutions Architect** with 10+ years of engineering experience, currently pursuing research at the intersection of **cloud-edge security**, **AI safety for embodied systems**, and **zero-trust infrastructure hardening**. I hold a Master's degree in Applied Computing (AI Specialization) from Taylor's University and am seeking a **PhD opportunity in Cybersecurity** in Singapore to advance my research on securing autonomous AI decision-making pipelines.
+
+My core thesis — the **Kinematic-Token Theorem** — formally proves that cloud-only LLM inference latency creates a physical safety deadlock for real-time autonomous vehicle control, and proposes a multi-layered defense architecture combining network isolation, AI safety firewalls, and edge computing to resolve it.
+
+> *"My moat is not the technologies I use, but the security judgments I make — where to short-circuit, where to isolate, where to degrade."*
 
 ---
 
-## 🛠️ Technology Stack
-* **Cloud & Platform:** Microsoft Azure, Azure Container Apps (ACA), Private Link, VNet Isolation, ACR, Bicep IaC, Docker
-* **Artificial Intelligence:** Azure OpenAI Service, WebGPU In-Browser Inference, Embeddings, RAG, Semantic Routing
-* **Backend & API:** Python, FastAPI, Azure Functions ASGI Host, Uvicorn, RESTful API
-* **Frontend & State:** Next.js (App Router), TypeScript, React, Tailwind CSS, WebSockets, Server-Sent Events (SSE)
+### 🔬 Research Interest
+
+**Securing AI-Driven Cyber-Physical Systems: Zero-Trust Architecture, Multi-Agent Safety Orchestration, and Edge-Cloud Hybrid Defense**
+
+| Research Dimension | My Contribution |
+|:-------------------|:----------------|
+| **Zero-Trust Network Security** | Hub-Spoke VNet + 4 Private Endpoints + bidirectional NSG + Managed Identity. Backend invisible from public internet. Validated by automated Shadow E2E test verifying Private DNS A records |
+| **AI Safety & Alignment** | 3-Agent pipeline (Router → Safety Firewall → Action Compiler) with cascading early circuit-breaking. Safety agent can **BLOCK** unsafe physical actions before they reach actuators |
+| **Edge Computing Security** | WebGPU in-browser inference ($0.00 server cost) protects user privacy — sensitive data never leaves the client device, reducing the cloud attack surface to zero for high-frequency queries |
+| **Formal Verification of AI Control Deadlocks** | Kinematic-Token Theorem: mathematical proof that $v \times T_{cloud} > d_{obstacle} - d_{brake}$ at operational speeds, necessitating hybrid edge-cloud cognitive pipelines |
+| **IoT Protocol Security** | Hand-crafted HMAC-SHA256 SAS Token signing (not SDK wrapper) for IoT Hub C2D messaging, demonstrating deep understanding of authentication protocols |
+| **Infrastructure Security Testing** | Self-healing Shadow E2E test suite: deploys full infrastructure replica → audits Private DNS resolution → auto-destroys with Ctrl+C signal safety |
 
 ---
 
-## 📈 Architectural Philosophy
-1. **Zero Duplication & Clear Boundaries:** Directory-level separation and component isolation are critical to governing cross-team boundaries and avoiding code drift.
-2. **Infrastructure as Code (IaC):** Every piece of network infrastructure, access control, and computing resource must be declarative, versioned, and audit-ready.
-3. **FinOps-Driven AI:** Leverage edge capabilities (like WebGPU) to reduce cloud inferencing costs, maximizing resource utilization while maintaining extreme data privacy.
+### 🏅 Microsoft Certifications
+
+<div align="center">
+
+| Certification | Title | Domain |
+|:---:|:---|:---|
+| **AZ-305** | Azure Solutions Architect Expert | ☁️ Cloud Architecture |
+| **AZ-104** | Azure Administrator Associate | ☁️ Cloud Operations |
+| **AI-102** | Azure AI Engineer Associate | 🤖 AI Engineering |
+| **SC-300** | Identity and Access Administrator | 🔐 **Security & Identity** |
+| **AB-100** | Agentic AI Business Architect | 🤖 AI Strategy |
+
+</div>
 
 ---
 
-## 📫 Career Target: Singapore 2026
-I am looking for **Senior Cloud Architect, AI Platform Engineer, or Lead Full-Stack Architect** roles in Singapore starting July/August 2026. 
+### 🛡️ Flagship Project
 
-* **LinkedIn:** [Shengwei Liu](https://www.linkedin.com/in/shengwei-liu/)
-* **Email:** [Contact via LinkedIn]
-* **Resume Document:** Available upon request
+<table>
+<tr>
+<td width="140" align="center">
+<img src="https://img.shields.io/badge/🛡️-OmniGuard-0078D4?style=for-the-badge" />
+</td>
+<td>
 
+**[Project-OmniGuard](https://github.com/swliu920322/Project-OmniGuard)** — Cloud-Edge Collaborative Security Orchestrator & Zero-Trust Sandbox
+
+An enterprise-grade security platform proving that cloud-only AI inference creates physical safety deadlocks for autonomous fleets, with a full Zero-Trust defense architecture deployed on Azure Singapore.
+
+</td>
+</tr>
+</table>
+
+**Security Architecture Highlights:**
+
+```
+Public Internet
+    │
+    ▼
+┌────────────────────────────────┐
+│ Next.js API Gateway (BFF)      │  ← Only public-facing surface
+│ Catch-all route proxy          │     Hides all internal paths
+└───────────┬────────────────────┘
+            │ .internal DNS (private)
+            ▼
+┌────────────────────────────────┐
+│ FastAPI Backend                │  ← external: false
+│ (VNet-internal ONLY)           │     Invisible from internet
+└───────────┬────────────────────┘
+            │ Private Endpoints (zero public access)
+            ▼
+┌──────┬──────────┬──────────┬──────────────┐
+│Cosmos│ Key Vault│   Blob   │ Azure OpenAI │
+│  DB  │  (RBAC)  │  Store   │  (Private)   │
+└──────┴──────────┴──────────┴──────────────┘
+```
+
+**Key Metrics:**
+
+| Metric | Value |
+|:-------|:------|
+| Total Codebase | **6,300+ lines** across frontend, backend, IaC, and automation |
+| Architecture Decision Records | **33 ADRs** (documented engineering reasoning) |
+| IaC Templates | 3-layer modular Bicep (main → infra → compute) |
+| E2E Security Test | 287-line self-healing Shadow test with Private DNS validation |
+| Multi-Agent Pipeline | 3 agents with 2 circuit-breaker short-circuits |
+| Edge AI Inference | WebGPU Qwen2.5 + MiniLM-L6-v2 at $0.00 server cost |
+
+---
+
+### 💼 Professional Experience
+
+| Period | Company | Role | Security-Relevant Work |
+|:-------|:--------|:-----|:-----------------------|
+| 2025–Present | Independent | **Lead Architect** | Project-OmniGuard: Zero-Trust infra, Multi-Agent AI safety, IoT security |
+| 2023–2024 | **Scania Group** | Software Engineer | Industrial MES/MOM systems under strict **compliance and security audit** standards |
+| 2021–2023 | **Accenture** | Associate Manager / Tech Lead | FinTech platform architecture with **audit token life-cycle management** and modular isolation |
+| 2020–2021 | Aosheng Info Tech | Lead Systems Architect | Corporate banking migration with **static code review and dry-run preflight checks** |
+
+---
+
+### 🎓 Education
+
+| Degree | Institution | Period | Focus |
+|:-------|:------------|:-------|:------|
+| **MSc Applied Computing** (AI Specialization) | Taylor's University, Malaysia | 2025.9–2026.8 | Enterprise RAG, Multi-Agent Orchestration |
+| B.Eng Mechanical Engineering | Taiyuan University of Technology | 2010.9–2014.9 | — |
+
+---
+
+### 🧰 Technical Stack
+
+**Security & Infrastructure**
+`Zero-Trust` `VNet/NSG` `Private Link` `Managed Identity` `Key Vault RBAC` `HMAC-SHA256 SAS` `Entra ID (SC-300)` `Shadow E2E Testing`
+
+**Cloud & DevOps**
+`Azure Container Apps` `Azure Functions` `Cosmos DB` `IoT Hub` `Bicep IaC` `Docker` `ACR` `Log Analytics`
+
+**AI & Machine Learning**
+`Azure OpenAI` `Multi-Agent Orchestration` `WebGPU Inference` `RAG` `Transformers` `Semantic Routing` `SSE Streaming`
+
+**Application Development**
+`Next.js 14` `FastAPI` `TypeScript` `Python` `React` `Canvas/Physics Simulation`
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=swliu920322&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=swliu920322&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+### 🎯 What I'm Looking For
+
+I am actively seeking a **PhD position in Cybersecurity / AI Safety** in Singapore. My research aims to extend the Kinematic-Token Theorem into a formal framework for securing AI-driven cyber-physical systems, with focus on:
+
+- 🔐 **Zero-Trust architectures** for autonomous IoT fleets in adversarial network environments
+- 🤖 **AI safety guarantees** through multi-agent compliance firewalls with formal verification
+- ⚡ **Edge-cloud hybrid security** — proving that local compute reduces both latency and attack surface
+- 🏗️ **Infrastructure security testing** — automated shadow environment validation of network isolation
+
+> If your lab works on securing AI systems, cloud-edge security, or IoT/CPS safety, I would love to connect.
+
+---
+
+<div align="center">
+
+📧 **lsw19920322@gmail.com** · 🔗 **[linkedin.com/in/shengwei-liu](https://linkedin.com/in/shengwei-liu)** · 📍 **Singapore**
+
+</div>
