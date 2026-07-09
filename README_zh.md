@@ -1,74 +1,138 @@
-# 🏗️ 刘圣伟 (Shengwei Liu) | 云&AI工程师 | AZ-305 专家级架构师
+<div align="center">
 
-> **"连接先进 Agent 智能体编排与高合规零信任云端基础设施。"**
-> 目前就读于马来西亚（攻读 AI 硕士学位） | 计划于 2026 年 8/9/10 月迁往新加坡
+# 刘胜伟
 
----
+**云安全架构师 · 零信任工程实践者 · AI + IoT 全栈工程师**
 
-## 👤 个人简介
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-shengwei--liu-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/shengwei-liu)
+[![Location](https://img.shields.io/badge/📍-Singapore-blue?style=flat-square)]()
+[![Email](https://img.shields.io/badge/📧-lsw19920322@gmail.com-red?style=flat-square)](mailto:lsw19920322@gmail.com)
 
-资深软件工程师与云架构师，拥有 **8 年以上一线生产环境开发交付经验** 与 **人工智能硕士学位**（主攻企业级 RAG 检索增强生成与多智能体编排）。我兼具深厚的前端状态机逻辑控制底蕴和严谨的云平台工程架构能力，擅长在微软 Azure 上为大模型（LLM）等 AI 业务负载设计并部署安全、高可用且高度合规的专有网络边界。
+**[🇬🇧 English Version](./PROFILE_README.md)**
 
-<p align="left">
-  <img src="https://img.shields.io/badge/证书-AZ--104%20Azure%20Administrator-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/证书-AZ--305%20Solutions%20Architect%20Expert-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/证书-SC--300%20Azure%20Identity%20and%20Access%20Administrator%20Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/证书-AI--102%20Azure%20AI%20Engineer%20Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/证书-AB--100%20Agentic%20AI%20Business%20Solutions%20Architect-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-</p>
+</div>
 
 ---
 
-## 🛡️ 代表资产：Project-OmniGuard (硕士毕业设计)
-*一款企业级云边协同网络安全决策沙盘系统，用于展示具身智能机队在恶劣边界下的安全状态机执行与遥测数据路由。*
+### 👤 关于我
 
-* **零信任私有网络边界 (ACA + Private Link):**  
-  在 **Azure Container Apps (ACA)** 上部署了虚拟网络隔离（VNet-isolated）的双容器架构。公网前端 Next.js 充当 **API 网关**，通过内网 DNS 协议将请求转发给私有后端 FastAPI 副本（`external: false`）。利用 **Private Endpoint（私网端点）** 彻底切断了 Cosmos DB、Storage Account 以及 Azure OpenAI 的所有公网入口。
-* **云边混合双通道 AI 管线 (WebGPU + 云端大模型):**  
-  设计了浏览器端原生 **WebGPU** 语义分流机制（Xenova MiniLM + Qwen2.5），在客户端以 **$0.00 服务端算力开销** 本地解算高频交互与 RAG 检索，只在超出本地知识边界时，通过前端 API 代理流式（SSE）回退到私网内部的 Azure OpenAI。
-* **实时遥测与机队治理大盘:**  
-  使用 Next.js 构建了可视化大盘，实时呈现机队物理指标（生命值、电量、温度、速度）并集成了网络抖动与延迟模拟器，动态渲染云端基础架构拓扑和 Agent 决策链路。
-* **高可靠 DevOps 与击穿缓存的 CI/CD:**  
-  编写了声明式 **Bicep** 模板实现基础设施的幂等一键部署。针对 Docker 编译和 Container Apps 镜像拉取中的缓存失效痛点，设计了 `--no-cache` 与 `TRIGGER_VERSION` 环境变量污染相结合的升级流水线，确保新代码与数据快照实时热更新上线。
+10+ 年全栈工程经验的 **云安全架构师**。从世界 500 强技术交付主管（Accenture）到欧洲工业制造产线系统（Scania），我的核心能力是**把安全架构从 PPT 落地成跑得动的真实系统**——不只是画 Hub-Spoke 拓扑图，而是写出 Bicep 模板、配好 Private Endpoint、跑通 Shadow E2E 测试证明网络确实是隔离的。
+
+目前持有 5 项 Microsoft 认证（含 **AZ-305 架构专家** 和 **SC-300 身份安全**），正在通过个人旗舰项目 **Project-OmniGuard** 持续深耕云边安全、多智能体 AI 编排与 IoT 设备安全。
 
 ---
 
-### 🛠️ 技术清单
-<p align="left">
-  <!-- Cloud & Infra -->
-  <img src="https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoft-azure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bicep-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-  <!-- Logic & AI -->
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/WebGPU-black?style=flat-square&logo=webgpu&logoColor=white" />
-  <!-- UI / State -->
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-</p>
+### 🏅 Microsoft 认证矩阵
+
+<div align="center">
+
+| 认证编号 | 名称 | 领域 |
+|:---:|:---|:---|
+| **AZ-305** | Azure 解决方案架构师专家 | ☁️ 云架构 |
+| **AZ-104** | Azure 管理员 | ☁️ 云运维 |
+| **AI-102** | Azure AI 工程师 | 🤖 AI 工程 |
+| **SC-300** | 身份与访问管理员 | 🔐 **安全与身份** |
+| **AB-100** | Agentic AI 商业架构师 | 🤖 AI 战略 |
+
+</div>
 
 ---
 
-## 🛠️ 技术栈清单
-* **云平台与基建:** Microsoft Azure, Azure Container Apps (ACA), Private Link (私网端点), VNet 虚拟网络隔离, ACR, Bicep IaC, Docker
-* **人工智能 (AI):** Azure OpenAI Service, 浏览器端 WebGPU 本地推理, Embeddings (向量化), RAG, 语义分流路由
-* **后端与 API:** Python, FastAPI, Azure Functions ASGI Host 容器底座, Uvicorn, RESTful API
-* **前端与状态:** Next.js (App Router), TypeScript, React, Tailwind CSS, WebSockets, 服务器端发送事件 (SSE 流式传输)
+### 🛡️ 旗舰项目：OmniGuard
+
+<table>
+<tr>
+<td width="140" align="center">
+<img src="https://img.shields.io/badge/🛡️-OmniGuard-0078D4?style=for-the-badge" />
+</td>
+<td>
+
+**[Project-OmniGuard](https://github.com/swliu920322/Project-OmniGuard)** — 云边协同安全编排器 · 零信任沙盘 · 6,300+ 行工程代码
+
+一个从零设计并实现的企业级安全平台，部署在 Azure 新加坡区域。不是 Demo，是全链路跑得通的系统。
+
+</td>
+</tr>
+</table>
+
+#### 我在这个项目里实际造了什么：
+
+**🔐 安全层 — 不是画图，是真能验证的零信任**
+
+- 手写了 **Hub-Spoke VNet 拓扑** + 4 个 Private Endpoint（Cosmos DB / Key Vault / Storage / OpenAI），后端对公网完全不可见（`external: false`）
+- 手写了 **HMAC-SHA256 SAS Token 签发**（不是调 SDK 一行搞定，是用 `hmac` + `hashlib` 从协议层手签），用于 IoT Hub C2D 消息认证
+- 写了 **287 行自愈式 Shadow E2E 测试**：拉起影子资源组 → 验证 Private DNS A 记录指向 `10.1.2.x` 子网 → 自动销毁。Ctrl+C 也不会泄露资源
+- **NSG 双向微分段**：Deny Internet Inbound + Allow Backend Only to Storage Subnet
+
+**🤖 AI 安全层 — 多智能体编排 + 物理级熔断**
+
+- 3-Agent 流水线（Router → Safety Firewall → Action Compiler），带 **2 个早期短路点**：
+  - `SENSOR_ERROR` → 立即 STOP，不浪费后续 Agent Token
+  - Safety Agent 返回 `BLOCK` → 安全覆盖，动作不会到达物理执行器
+- 运动学-Token 定理工程验证：前端物理仿真证明云端 2600ms 延迟下 AGV 无法在碰撞前刹停，必须 15ms 边缘端急刹
+
+**⚡ 边缘计算层 — 浏览器里跑大模型**
+
+- **WebGPU** 在浏览器就地拉起 Qwen2.5-0.5B + MiniLM-L6-v2，$0.00 服务端算力
+- 余弦相似度语义路由器（阈值 ≥ 0.72），本地能答的绝不上云
+
+**🏗️ 基础设施层 — 全链路 IaC + 自动化**
+
+- 三层模块化 Bicep（main → nested-infra → compute-module），支持 `sandbox` / `secure-iot` 场景切换
+- 可视化 IaC 配置器：在浏览器里配 VNet CIDR、SKU、托管身份，导出可部署的 `.zip` 包
+- Bicep 预检编译 + Azure 云端 `az deployment sub validate` 预飞行校验
+- **33 份 ADR** 架构决策记录（不只是写代码，还记录了为什么这样做）
+
+**📊 项目数据**
+
+| 指标 | 数值 |
+|:-----|:-----|
+| 总代码量 | **6,300+ 行**（前端 3,500 + 后端 800 + IaC 560 + 自动化 1,200） |
+| ADR 文档 | **33 份**（Infra 8 / Backend 6 / Frontend 13 / Architecture 10） |
+| E2E 测试 | 287 行（自愈式，验证私网 DNS + ACA 健康） |
+| IoT 全链路 | Event Hub Trigger ↔ C2D 消息（HMAC-SHA256 SAS 手签） |
 
 ---
 
-## 📈 架构设计哲学
-1. **零冗余与明确边界:** 倡导物理目录级的前后端隔离，划清跨团队协作边界，从根本上杜绝代码漂移与依赖臃肿。
-2. **基础设施即代码 (IaC):** 所有的网络拓扑、访问权限控制和计算资源必须代码化、版本化，达到企业级安全审计标准。
-3. **FinOps 驱动的智能体设计:** 充分释放边缘算力（如 WebGPU），降低云端推理开销，在维护极致数据隐私的同时最大化投资回报比。
+### 💼 工程履历
+
+| 时间 | 公司 | 角色 | 做了什么 |
+|:-----|:-----|:-----|:---------|
+| 2025–至今 | 独立项目 | **Lead Architect** | OmniGuard：零信任基础设施 + 多智能体 AI 安全 + IoT 设备安全 |
+| 2023–2024 | **Scania Group** | Software Engineer | 欧亚跨区域产线 MES/MOM 系统，严格工业合规与安全审计 |
+| 2021–2023 | **Accenture** | 技术交付主管 | FinTech 平台 0→1 架构，微前端隔离，审计 Token 生命周期状态机 |
+| 2020–2021 | 奥升信息 | Lead Systems Architect | 企业银行核心系统迁移，静态代码审查 + Dry-run 预检安全门 |
 
 ---
 
-## 📫 职业目标：新加坡 2026
-我正在寻找新加坡的 **资深云架构师 (Senior Cloud Architect)**、**AI 平台工程师 (AI Platform Engineer)** 或 **全栈技术主管/架构师 (Lead Full-Stack Architect)** 职位，面试时间预计为 2026 年 7/8 月。
+### 🎓 教育背景
 
-* **LinkedIn:** [Shengwei Liu](https://www.linkedin.com/in/shengwei-liu/)
-* **Email:** [通过 LinkedIn 私信联系]
-* **个人简历:** 可根据要求提供完整 PDF 版简历
+| 学位 | 学校 | 时间 |
+|:-----|:-----|:-----|
+| **应用计算硕士** (AI 方向) | Taylor's University, Malaysia | 2025.9–2026.8 |
+| 机械工程学士 | 太原理工大学 | 2010.9–2014.9 |
+
+---
+
+### 🧰 技术栈
+
+**安全与基础设施**
+`Zero-Trust` `VNet/NSG` `Private Link` `Managed Identity` `Key Vault RBAC` `HMAC-SHA256` `Entra ID` `Shadow E2E`
+
+**云平台**
+`Azure Container Apps` `Azure Functions` `Cosmos DB` `IoT Hub` `Bicep IaC` `Docker` `ACR` `Log Analytics`
+
+**AI 工程**
+`Azure OpenAI` `Multi-Agent Pipeline` `WebGPU` `RAG` `Transformers` `Semantic Routing` `SSE Streaming`
+
+**应用开发**
+`Next.js 14` `FastAPI` `TypeScript` `Python` `React` `Canvas 物理仿真`
+
+---
+
+<div align="center">
+
+📧 **lsw19920322@gmail.com** · 🔗 **[linkedin.com/in/shengwei-liu](https://linkedin.com/in/shengwei-liu)** · 📍 **Singapore**
+
+</div>
+
